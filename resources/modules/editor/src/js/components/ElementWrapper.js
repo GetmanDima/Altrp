@@ -78,6 +78,7 @@ import ProgressBarComponent from "./widgets/styled-components/ProgressBarCompone
 import InputCropImageComponent from "./widgets/styled-components/InputCropImageComponent";
 import getFeedbackStyles from "../../../../front-app/src/js/components/helpers/getFeedbackStyles";
 import getInputPaginationStyles from "../../../../front-app/src/js/components/helpers/getInputPaginationStyles";
+import PigeonMapComponent from "./widgets/styled-components/PigeonMapComponent";
 
 const { connect } = window.reactRedux;
 const { replaceContentWithData } = window.altrpHelpers;
@@ -347,6 +348,9 @@ const ElementWrapperGlobalStyles = window.createGlobalStyle`${({
       break;
     case 'input-pagination':
       styles += `.${prefix}${elementId} {${getInputPaginationStyles(settings)}}`
+      break;
+    case "pigeon-map":
+      styles += `.${prefix}${elementId} {${PigeonMapComponent(settings)}}`
       break;
   }
 
