@@ -128,6 +128,8 @@ import Feedback from "../../classes/elements/Feedback";
 import FeedbackWidget from "../../components/widgets/FeedbackWidget";
 import InputPagination from "../../classes/elements/InputPagination";
 import InputPaginationWidget from "../../components/widgets/InputPaginationWidget";
+import PigeonMap from "../../classes/elements/PigeonMap";
+import PigeonMapWidget from "../../components/widgets/PigeonMapWidget/PigeonMapWidget";
 
 const elements = {}
 const components = {}
@@ -196,6 +198,7 @@ elements[Tournament.getName()] = Tournament
 elements[Feedback.getName()] = Feedback;
 elements[Column.getName()] = Column;
 elements[Section.getName()] = Section;
+elements[PigeonMap.getName()] = PigeonMap
 // elements[List.getName()] = List;
 // elements[Nav.getName()] = Nav;
 // elements[Input.getName()] = Input;
@@ -276,6 +279,8 @@ components[Stars.getName()] = StarsWidget;
 components[ProgressBar.getName()] = ProgressBarWidget;
 components[Tournament.getName()] = TournamentWidget
 components[Feedback.getName()] = FeedbackWidget
+
+components[PigeonMap.getName()] = PigeonMapWidget
 
 export default {
     elements: {

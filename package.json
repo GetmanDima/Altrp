@@ -144,6 +144,7 @@
         "object-diff": "^0.0.4",
         "oidc-client": "^1.11.5",
         "passport": "^0.4.1",
+        "pigeon-maps": "^0.21.0",
         "pusher-js": "^7.0.2",
         "query-string": "^6.13.1",
         "rc-drawer": "^4.1.0",
